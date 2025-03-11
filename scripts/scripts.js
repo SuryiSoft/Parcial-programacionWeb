@@ -38,7 +38,6 @@ function mostrarDatos() {
 }
 
 function mostrarDatos1() {
-    // Capturar los valores de los inputs
     let nombre = document.getElementById("name").value;
     let apellido = document.getElementById("lastname").value;
     let email = document.getElementById("email").value;
@@ -47,13 +46,11 @@ function mostrarDatos1() {
     let fecha = document.getElementById("fecha").value;
     let sangre = document.getElementById("sanguineo").value;
 
-    // Validar que no haya campos vacíos
     if (!nombre || !apellido || !email || !telefono || !estrato || !fecha || !sangre) {
         alert("Por favor, completa todos los campos.");
         return;
     }
 
-    // Mostrar los datos en un alert
     alert(
         "Datos ingresados:\n" +
         "Nombre: " + nombre + "\n" +
@@ -93,7 +90,6 @@ function mostrarDatos() {
 }
 
 function mostrarDatos1() {
-    // Capturar los valores de los inputs
     let nombre = document.getElementById("name").value;
     let apellido = document.getElementById("lastname").value;
     let email = document.getElementById("email").value;
@@ -102,7 +98,6 @@ function mostrarDatos1() {
     let fecha = document.getElementById("fecha").value;
     let sangre = document.getElementById("sanguineo").value;
 
-    // Validar que no haya campos vacíos
     if (!nombre || !apellido || !email || !telefono || !estrato || !fecha || !sangre) {
         alert("Por favor, completa todos los campos.");
         return;
@@ -111,20 +106,19 @@ function mostrarDatos1() {
     let generoSeleccionado = document.querySelector('input[name="flexRadioDefault"]:checked');
 let genero = generoSeleccionado ? generoSeleccionado.nextElementSibling.textContent.trim() : "No seleccionado";
 
-// Capturar las actividades seleccionadas (checkboxes)
 let actividadesSeleccionadas = [];
 document.querySelectorAll('.form-check-input[type="checkbox"]:checked').forEach((checkbox) => {
 let actividad = checkbox.nextElementSibling.textContent.trim();
 actividadesSeleccionadas.push(actividad);
 });
 
-// Validar que no haya campos vacíos (excepto actividades, que son opcionales)
+
 if (!nombre || !apellido || !email || !telefono || !estrato || !fecha || !sangre || !generoSeleccionado) {
 alert("Por favor, completa todos los campos obligatorios.");
 return;
 }
 
-// Mostrar los datos en un alert
+
 alert(
 "Datos ingresados:\n" +
 "Nombre: " + nombre + "\n" +

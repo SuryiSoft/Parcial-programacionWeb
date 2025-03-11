@@ -2,18 +2,21 @@
     margin: 20px 0;
 }
 
+
+
 .img-links--container{
     width: 100%;
     display: flex;
 }
 
-.card{
-    display: flex;
-    flex-direction: row; /* Asegura que los elementos estén en fila por defecto */
+.img-links--container:nth-child(2){
+    max-width: 300px;
+    position: relative;
 }
 
-.card:nth-child(2n){
-    flex-direction: row-reverse; /* Invierte la dirección de los elementos en cada segundo hijo */
+.buttons-container--card:nth-child(2){
+    width: 300px;
+    position: relative;
 }
 
 .buttons-container--card{
