@@ -1,0 +1,34 @@
+.productos-container {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card-title{
+    background: rgb(160, 160, 160);
+    padding: 10px;
+    border-radius: 3px 3px 0 0;
+}
+
+.card-description{
+    padding: 3px 10px;
+    font-size:  2rem;
+}
+
+.card-body{
+    display: flex;
+}
+
+.button-card{
+    margin: auto;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
